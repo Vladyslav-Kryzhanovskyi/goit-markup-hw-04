@@ -137,7 +137,7 @@ body {
     /* display: flex; */
     background-image:
     linear-gradient(rgba(47, 48, 58, 0.42),
-    rgba(47, 48, 58, 0.42)), url(/images/fon.jpg);
+    rgba(47, 48, 58, 0.42)), url(../images/fon.jpg);
     width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -148,6 +148,11 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+  }
+  .hero:hover {
+    background-image:
+    linear-gradient(rgba(47, 48, 58, 0),
+    rgba(47, 48, 58, 0)), url(../images/fon.jpg);
   }
   .hero-title {
     margin: 0 auto;
