@@ -112,7 +112,8 @@ body {
   .site-nav .link.current {
     color: var(--accent-color);
   }
-  .contacts-box-icon:hover {
+  .contacts-box-icon .info:hover,
+  .contacts-box-icon .info:focus {
     fill: var(--accent-color); 
   }
   .site-nav .link:hover,
@@ -138,7 +139,7 @@ body {
     background-image:
     linear-gradient(rgba(47, 48, 58, 0.42),
     rgba(47, 48, 58, 0.42)), url(../images/fon.jpg);
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -254,7 +255,7 @@ body {
 
   .section-team {
     padding-top: 94px;
-    padding-bottom: 50px;
+    padding-bottom: 94px;
     background-color: #F5F4FA;
   }
   .team-list {
@@ -291,7 +292,8 @@ body {
   .team-social-media-icon {
     fill: #AFB1B8;
   }
-  .team-social-media-link:hover svg {
+  .team-social-media-link:hover svg,
+  .team-social-media-link:focus svg {
     fill: #FFFFFF;
   }
   /*_______Clients_____*/
@@ -316,10 +318,12 @@ body {
   .company-icon {
     fill: #AFB1B8;
   }
-  .clients-link:hover {
+  .clients-link:hover,
+  .clients-link:focus {
     border-color: #2196F3;
   }
-  .clients-item:hover svg {
+  .clients-link:hover svg,
+  .clients-link:focus svg {
     fill: #2196F3;
   }
   .clients-list {
@@ -328,29 +332,33 @@ body {
   }
   /*Footer*/
   footer {
-    display: flex;
+    /* display: flex; */
     /* padding-top: 60px;
     padding-bottom: 60px; */
     background-color: #2F303A;
   }
+  .footer-box {
+    display: flex;
+  }
   .connect-box {
     width: 206px;
   }
-  .footer-box {
-   width: min-content;
-   margin: 60px 70px 60px 215px;
+  .info-box {
+   width: 231px;
+   margin: 60px 70px 60px 0px;
   }
   .social-media-list {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .social-media-item {
-    /* width: 44px;
-    height: 44px; */
-  }
+  /* .social-media-item {
+    width: 44px;
+    height: 44px; }*/
   .team-social-media-link:hover,
-  .social-media-link:hover {
+  .team-social-media-link:focus,
+  .social-media-link:hover,
+  .social-media-link:focus {
     background-color: #2196F3;
   }
   .team-social-media-link,
@@ -421,10 +429,12 @@ body {
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
   }
+  .pfl-section {
+    padding-top: 90px;
+  }
   .pfl-list {
     display: flex;
     justify-content: center;
-    padding-top: 90px;
     padding-bottom: 50px;
   }
   .portfolio-button {
@@ -467,7 +477,6 @@ body {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
   }
   .pfl-link {
     display: inline-block;
@@ -482,9 +491,6 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color)
-  }
-  a {
-  
   }
   .portf-text {
     /* margin-top: 4px;
