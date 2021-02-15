@@ -297,7 +297,7 @@ body {
     fill: #FFFFFF;
   }
   /*_______Clients_____*/
-  .clients-box {
+  .clients {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -333,8 +333,8 @@ body {
   /*Footer*/
   footer {
     /* display: flex; */
-    /* padding-top: 60px;
-    padding-bottom: 60px; */
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
   }
   .footer-box {
@@ -342,10 +342,11 @@ body {
   }
   .connect-box {
     width: 206px;
+    padding-bottom: 100px;
   }
   .info-box {
    width: 231px;
-   margin: 60px 70px 60px 0px;
+   margin-right: 70px;
   }
   .social-media-list {
     display: flex;
@@ -381,7 +382,6 @@ body {
     padding-right: 10px;
   }
   .connect-title {
-  margin-top: 72px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
